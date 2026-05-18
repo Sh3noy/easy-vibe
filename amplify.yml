@@ -6,7 +6,7 @@ frontend:
         - npm ci
     build:
       commands:
-        - npm run build
+        - BASE=/ SITE_URL=https://main.d30dzyj8pzxkno.amplifyapp.com npm run build
   artifacts:
     baseDirectory: docs/.vitepress/dist
     files:
